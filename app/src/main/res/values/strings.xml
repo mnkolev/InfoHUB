@@ -7,4 +7,6 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="title_activity_main_activity2_test">MainActivity2Test</string>
     <string name="title_activity_main_activity2_test2">MainActivity2Test2</string>
+    <string name="title_activity_presenters">PresentersActivity</string>
+    <string name="title_activity_single_presenter">SinglePresenterActivity</string>
 </resources>
