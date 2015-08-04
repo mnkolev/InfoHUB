@@ -20,18 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Oh Hey"
+            android:text="Home Screen"
             android:textSize="24sp"
             android:gravity="center"
             android:layout_marginTop="100dp"/>
-
-        <!--<ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/batdroid"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"/>
-            -->
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
 
     </RelativeLayout>
 
@@ -42,5 +38,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="left|start"
         android:background="#ffeeeeee"/>
+
 
 </android.support.v4.widget.DrawerLayout>

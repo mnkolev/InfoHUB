@@ -21,8 +21,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.support.v7.widget.Toolbar;
-import android.widget.Toast;
 
 public class PresentersActivity extends ListActivity {
 
@@ -52,7 +50,7 @@ public class PresentersActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_presenters);
 
         contactList = new ArrayList<HashMap<String, String>>();
 
