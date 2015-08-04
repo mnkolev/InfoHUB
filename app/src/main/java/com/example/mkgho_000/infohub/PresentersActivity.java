@@ -12,6 +12,8 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,9 +27,6 @@ import android.widget.TextView;
 public class PresentersActivity extends ListActivity {
 
     private ProgressDialog pDialog;
-
-    private ListView mDrawerList;
-    private ArrayAdapter<String> mAdapter;
 
     // URL to get contacts JSON
     private static String url = "http://private-ee02a-wsginfohub.apiary-mock.com/api/presenters";
@@ -51,6 +50,7 @@ public class PresentersActivity extends ListActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_presenters);
+
 
         contactList = new ArrayList<HashMap<String, String>>();
 
@@ -91,7 +91,7 @@ public class PresentersActivity extends ListActivity {
 
     /**
      * Async task class to get json by making HTTP call
-     */
+     * */
     private class GetContacts extends AsyncTask<Void, Void, Void> {
 
         @Override
@@ -173,13 +173,13 @@ public class PresentersActivity extends ListActivity {
              * */
             ListAdapter adapter = new SimpleAdapter(
                     PresentersActivity.this, contactList,
-                    R.layout.list_item, new String[]{TAG_NAME, TAG_TITLE,
-                    TAG_COMPANY}, new int[]{R.id.name,
-                    R.id.title, R.id.company});
+                    R.layout.list_item, new String[] { TAG_NAME, TAG_TITLE,
+                    TAG_COMPANY }, new int[] { R.id.name,
+                    R.id.title, R.id.company });
 
             setListAdapter(adapter);
         }
 
     }
-}
 
+}
