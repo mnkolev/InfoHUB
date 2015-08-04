@@ -51,7 +51,7 @@ public class MainActivity extends ActionBarActivity {
                     case 0:  Intent newsActivity = new Intent(MainActivity.this, NewsActivity.class);
                         startActivity(newsActivity);
                         break;
-                    case 1:  Intent sessionsActivity = new Intent(MainActivity.this, MainActivity2Test2.class);
+                    case 1:  Intent sessionsActivity = new Intent(MainActivity.this, SessionsActivity.class);
                         startActivity(sessionsActivity);
                         break;
                     case 2:  Intent PresentersActivity = new Intent(MainActivity.this, PresentersActivity.class);
