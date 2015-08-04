@@ -9,4 +9,8 @@
     <string name="title_activity_main_activity2_test2">MainActivity2Test2</string>
     <string name="title_activity_presenters">PresentersActivity</string>
     <string name="title_activity_single_presenter">SinglePresenterActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_single_news">SingleNewsActivity</string>
+    <string name="title_activity_sessions">SessionsActivity</string>
+    <string name="title_activity_single_session">SingleSessionActivity</string>
 </resources>

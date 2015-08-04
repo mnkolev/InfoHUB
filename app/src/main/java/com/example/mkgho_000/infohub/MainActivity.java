@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -49,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
 
                 //The two classes here are for test, to be replaced soon
                 switch(position){
-                    case 0:  Intent newsActivity = new Intent(MainActivity.this, MainActivity2Test.class);
+                    case 0:  Intent newsActivity = new Intent(MainActivity.this, NewsActivity.class);
                         startActivity(newsActivity);
                         break;
                     case 1:  Intent sessionsActivity = new Intent(MainActivity.this, MainActivity2Test2.class);
