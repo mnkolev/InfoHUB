@@ -77,7 +77,7 @@ public class PresentersActivity extends ListActivity {
                 String thumb = ((TextView) view.findViewById(R.id.thumb))
                         .getText().toString();
 
-                // Starting single contact activity
+                // Starting single contact activity here
                 Intent in = new Intent(getApplicationContext(),
                         SinglePresenterActivity.class);
                 in.putExtra(TAG_NAME, name);
